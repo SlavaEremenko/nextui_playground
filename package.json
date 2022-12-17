@@ -4,6 +4,7 @@
   "dependencies": {
     "@hotwired/stimulus": "^3.2.1",
     "@hotwired/turbo-rails": "^7.2.4",
+    "@nextui-org/react": "^1.0.0-beta.10",
     "esbuild": "^0.16.7",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
