@@ -1,4 +1,4 @@
-default: &default
+default: &base
   adapter: mysql2
   username: root
   password: CHANGEMEPLEASE
