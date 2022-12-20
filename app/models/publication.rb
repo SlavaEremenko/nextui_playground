@@ -6,4 +6,8 @@ class Publication < ApplicationRecord
 
     where("end_on IS NULL OR end_on > ?", date)
   end
+
+  def publication_type_display
+    PublicationType.find_by(name: publication_type)&.display
+  end
 end

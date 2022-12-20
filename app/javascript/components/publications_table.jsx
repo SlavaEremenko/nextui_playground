@@ -19,15 +19,13 @@ export const PublicationsTable = (props) => (
 				<Table.Column>NAME</Table.Column>
 				<Table.Column>TYPE</Table.Column>
 			</Table.Header>
-			<Table.Body>
-				{props.items.map((publication, i) => {
-					return (
-						<Table.Row key={i}>
-							<Table.Cell>{publication.name}</Table.Cell>
-							<Table.Cell>{publication.publication_type}</Table.Cell>
-						</Table.Row>
-					)
-				})}
+			<Table.Body items={props.items}>
+				{publication => (
+					<Table.Row key={publication.id}>
+						<Table.Cell>{publication.name}</Table.Cell>
+						<Table.Cell>{publication.publication_type_display}</Table.Cell>
+					</Table.Row>
+				)}
 			</Table.Body>
 		</Table>
 	</>
